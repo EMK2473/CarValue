@@ -3,6 +3,7 @@ package CarValue;
 public class Car {
     private int modelYear; 
     // TODO: Declare purchasePrice field (int)
+    private int purchasePrice;
     private int currentValue;
     
     public void setModelYear(int userYear){
@@ -14,10 +15,19 @@ public class Car {
     }
     
     // TODO: Define setPurchasePrice() method
+    public void setPurchasePrice(int userPrice) {
+        purchasePrice = userPrice;
+    }
 
     
     // TODO: Define getPurchasePrice() method
+    public int getPurchasePrice() {
+        return purchasePrice;
+    }
 
+    public int getCurrentValue(){
+        return currentValue;
+    }
     
     
     public void calcCurrentValue(int currentYear) {
@@ -30,5 +40,8 @@ public class Car {
     }
     
     // TODO: Define printInfo() method to output modelYear, purchasePrice, and currentValue
+    public void printInfo(){
+        System.out.print("Working");
+    }
 
  }
