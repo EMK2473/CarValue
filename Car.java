@@ -2,7 +2,6 @@ package CarValue;
 
 public class Car {
     private int modelYear; 
-    // TODO: Declare purchasePrice field (int)
     private int purchasePrice;
     private int currentValue;
     
@@ -14,13 +13,13 @@ public class Car {
        return modelYear;
     }
     
-    // TODO: Define setPurchasePrice() method
+
     public void setPurchasePrice(int userPrice) {
         purchasePrice = userPrice;
     }
 
     
-    // TODO: Define getPurchasePrice() method
+
     public int getPurchasePrice() {
         return purchasePrice;
     }
@@ -39,9 +38,12 @@ public class Car {
           Math.round(purchasePrice * Math.pow((1 - depreciationRate), carAge));
     }
     
-    // TODO: Define printInfo() method to output modelYear, purchasePrice, and currentValue
+
     public void printInfo(){
-        System.out.print("Working");
+        System.out.println("Car's information:");
+      System.out.println("  Model year: " + getModelYear());
+      System.out.println("  Purchase price: $" + getPurchasePrice());
+      System.out.println("  Current value: $" + getCurrentValue());
     }
 
  }
