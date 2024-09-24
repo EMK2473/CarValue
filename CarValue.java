@@ -18,5 +18,6 @@ public class CarValue {
       myCar.calcCurrentValue(userCurrentYear);
       
       myCar.printInfo();
+      scnr.close();
    }
 }
